@@ -19,9 +19,6 @@ client.on('messageCreate', (message) => {
     else if(message.content.toLowerCase().includes('tofu')){ 
         return message.chat.sendMessage('OwO, how do you know my master Tofu⭐?');
           } 
-else if(message.content.toLowerCase().includes('aditya')){ 
-        return message.chat.sendMessage('OwO, how do you know my master Adi💛?');
-          } 
   else
     chatbot(`http://api.brainshop.ai/get?bid=167274&key=uVH5H16CHUMs3LWP&uid=Kurumi&msg=${encodeURIComponent(message.content)}`)
     .then(res => res.json())

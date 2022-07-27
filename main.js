@@ -23,7 +23,7 @@ else if(message.content.toLowerCase().includes('aditya')){
         return message.chat.sendMessage('OwO, how do you know my master Adi💛?');
           } 
   else
-    chatbot(`http://Kukiapi.xyz/api/apikey=5145883564-KUKISf4kHn2oT0/Kurumi/@aditya.agatsuma/message=${encodeURIComponent(message.content)}`)
+    chatbot(`http://api.brainshop.ai/get?bid=167274&key=uVH5H16CHUMs3LWP&uid=Kurumi&msg=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
       message.chat.sendMessage(json.reply);

@@ -26,7 +26,7 @@ else if(message.content.toLowerCase().includes('aditya')){
     chatbot(`http://api.brainshop.ai/get?bid=167274&key=uVH5H16CHUMs3LWP&uid=Kurumi&msg=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
-      message.chat.sendMessage(json.reply);
+      message.chat.sendMessage(json.cnt);
     }).catch(err => {});
 });
 

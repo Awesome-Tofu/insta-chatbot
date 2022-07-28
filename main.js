@@ -20,7 +20,7 @@ client.on('messageCreate', (message) => {
         return message.chat.sendMessage('OwO, how do you know my master Tofu⭐?');
           } 
   else
-    chatbot(`http://api.brainshop.ai/get?bid=167274&key=uVH5H16CHUMs3LWP&uid=Kurumi&msg=${encodeURIComponent(message.content)}`)
+    chatbot(`https://www.kukiapi.xyz/api/apikey=5145883564-KUKISf4kHn2oT0/Kurumi/@aditya/message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
       message.chat.sendMessage(json.cnt);

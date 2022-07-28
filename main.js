@@ -23,7 +23,8 @@ client.on('messageCreate', (message) => {
     chatbot(`https://www.kukiapi.xyz/api/apikey=5145883564-KUKISf4kHn2oT0/Kurumi/@aditya/message=${encodeURIComponent(message.content)}`)
     .then(res => res.json())
     .then(json => {
-      message.chat.sendMessage(json.cnt);
+        message.chat.sendMessage(json.reply);
+      //message.chat.sendMessage(json.cnt);
     }).catch(err => {});
 });
 

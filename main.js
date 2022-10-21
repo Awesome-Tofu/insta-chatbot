@@ -28,5 +28,5 @@ client.on('messageCreate', (message) => {
     }).catch(err => {});
 });
 
-client.login(`${ke}`, `${kp}`);
+client.login(process.env.USERNAME,process.env.PASSWORD);
 //npm run start

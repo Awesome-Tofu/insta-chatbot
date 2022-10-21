@@ -10,6 +10,11 @@
       "value": "",
      "required" :true
   },
+    "CHATBOT_API": {
+    "description": "Suggested To Use API From https://brainshop.ai/",
+      "value": "",
+     "required" :true
+  },
   "PASSWORD": {
     "description": "Put Password Of Bot Account",
      "value": "",
